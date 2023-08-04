@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Reader</title>
+    <link rel="icon" href="images/qr-code.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b788805903.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="title">Read your QR code:</h1>
+    <div class="container">
+        <form action="#" id="form" class="qr-container">
+            <input type="file" class="qr-input" id="file-input" hidden>
+            <img src="#" alt="">
+            <div class="content">
+                <img src="images/Upload Icon.png" alt="Upload Icon" class="upload-icon">
+                <p class="qr-text">Upload QR Code</p>
+            </div>
+        </form>
+        <textarea class="url-output" spellcheck="false" id="url-output" disabled></textarea>
+        <button class="copy-btn" id="close-btn">Copy Address<i class="fas fa-regular fa-copy"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
