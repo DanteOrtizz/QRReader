@@ -6,6 +6,7 @@
     --secondary-color: rgba(147, 166, 207, 1);
     --text-color: rgba(223, 228, 234, 1);
     --button-color: rgba(47, 53, 66, 1);
+    --button-hover-color: rgba(36, 41, 51, 1);
   }
   
 
@@ -14,8 +15,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono';
-
 }
+
 
 body {
     background-color: var(--background-color);
@@ -28,38 +29,30 @@ body {
 
 .title {
     margin-top: 10px;
-    margin-bottom: 10px;
     color: var(--text-color);
     font-family: 'Roboto Mono';
     font-style: normal;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0px;
-    /*margin-left: 465px;*/
-
 }
 
 .container {
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
     width: 400px;
     height: 600px;
     border-radius: 5px;
     background-color: var(--primary-color);
-    /*margin-left: 392px;*/
 }
 
 .qr-container {
-   /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 50px;
     margin-right: 50px;
     width: 300px;
@@ -67,6 +60,10 @@ body {
     background-color: var(--secondary-color);
     color: var(--text-color);
     border-radius: 5px;
+}
+
+.qr-container:hover {
+    cursor: pointer;
 }
 
 .content {
@@ -79,13 +76,10 @@ body {
 
 .upload-icon {
     width: 40px;
-    height: 40px;
-   /* margin-left: 130px;
-    margin-top: 90px; */  
+    height: 40px; 
 }
 
 .qr-text {
-  /*  margin-left: 80.5px; */
     font-family: 'Roboto Mono';
     font-style: normal;
     font-size: 20px;
@@ -97,7 +91,7 @@ body {
 }
 
 .url-output {
-    margin-top: 66px;
+    margin-top: 50px;
     width: 300px;
     height: 52px;
     border-radius: 5px;
@@ -110,7 +104,8 @@ body {
 }
 
 .copy-btn {
-    margin-top: 66.5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     width:300px;
     height: 40px;
     border: none;
@@ -126,10 +121,13 @@ body {
     text-decoration: none;
     text-transform: none;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+
+   transition: all 0.3s ;
 }
 
 .copy-btn:hover {
     cursor: pointer;
+    background-color: var(--button-hover-color);
 }
 
 i {
